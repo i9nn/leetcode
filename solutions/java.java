@@ -1,4 +1,10 @@
-// [ 1-10.java: Problems for first 10 java questions ]
+/*
+    My Java solutions to the LeetCode Java exercises. 
+    Feel free to poke around.
+
+    Exercises finished: 10
+*/
+
 class Solution {
     
     // 1. Two Sum
