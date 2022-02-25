@@ -14,6 +14,20 @@ class Solution {
         return nums;
     }
 
+    // 771. Jewels and Stones
+    public int numJewelsInStones(String jewels, String stones) {
+        int count = 0; 
+        for (int i = 0; i < jewels.length(); i++) {
+            for (int j = 0; j < stones.length(); j++) { 
+                if (jewels.charAt(i) == stones.charAt(j)) {
+                    count++;
+                }
+            }
+        }
+        
+        return count; 
+    }
+
     // 1480. Running Sum of 1d Array
     public int[] runningSum(int[] nums) {
         int[] running = new int[nums.length];
