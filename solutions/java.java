@@ -10,7 +10,7 @@ class Solution {
                     return sum; 
                 }
             }
-        }
+		}
         return nums;
     }
 
@@ -26,6 +26,36 @@ class Solution {
         }
         
         return count; 
+    }
+
+    // 1108. Defanging an IP Address
+    public String defangIPaddr(String address) {
+        String defanged = "";
+        
+        for (int i = 0; i < address.length(); i++) { 
+            if (Character.isDigit(address.charAt(i))) {
+                defanged += address.charAt(i);
+            } else { 
+                defanged += "[.]";
+            }
+        } 
+        
+        return defanged; 
+    }
+
+	// 1365. How Many Numbers Are Smaller Than the Current Number
+	public int[] smallerNumbersThanCurrent(int[] nums) {
+        int[] smallers = new int[nums.length];
+        
+        for (int i = 0; i < nums.length; i++) { 
+            for (int j = 0; j < nums.length; j++) { 
+                if (nums[j] < nums[i]) { 
+                    smallers[i]++;
+                }
+            }   
+        }
+        
+        return smallers; 
     }
 
     // 1480. Running Sum of 1d Array
@@ -93,5 +123,28 @@ class Solution {
         }
         
         return x; 
+    }
+
+	// 2114. Maximum Number of Words Found in Sentences
+    public int mostWordsFound(String[] sentences) {
+        int words = 0; 
+        
+        for (int s = 0; s < sentences.length; s++) {
+            String str = sentences[s];
+            int spaces = 0; 
+            
+            for (int i = 0; i < str.length(); i++) { 
+                if (Character.isWhitespace(str.charAt(i))) { 
+                    spaces++;
+                }
+            }
+            spaces++;
+                
+            if (spaces > words) { 
+                words = spaces; 
+            }
+        }
+
+        return words; 
     }
 }
