@@ -7,7 +7,7 @@
 
 class Solution {
     
-    // 1. Two Sum
+    // 1. Two Sum [EASY]
     public int[] twoSum(int[] nums, int target) {
         for (var i = 0; i < nums.length; i++) { 
             for (var j = 0; j < nums.length; j++) { 
@@ -16,11 +16,11 @@ class Solution {
                     return sum; 
                 }
             }
-		}
+        }
         return nums;
     }
 
-    // 771. Jewels and Stones
+    // 771. Jewels and Stones [EASY]
     public int numJewelsInStones(String jewels, String stones) {
         int count = 0; 
         for (int i = 0; i < jewels.length(); i++) {
@@ -34,7 +34,7 @@ class Solution {
         return count; 
     }
 
-    // 1108. Defanging an IP Address
+    // 1108. Defanging an IP Address [EASY]
     public String defangIPaddr(String address) {
         String defanged = "";
         
@@ -49,7 +49,7 @@ class Solution {
         return defanged; 
     }
 
-	// 1365. How Many Numbers Are Smaller Than the Current Number
+	// 1365. How Many Numbers Are Smaller Than the Current Number [EASY]
 	public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] smallers = new int[nums.length];
         
@@ -64,7 +64,7 @@ class Solution {
         return smallers; 
     }
 
-    // 1480. Running Sum of 1d Array
+    // 1480. Running Sum of 1d Array [EASY]
     public int[] runningSum(int[] nums) {
         int[] running = new int[nums.length];
         running[0] = nums[0];
@@ -76,7 +76,22 @@ class Solution {
         return running; 
     }
 
-    // 1672. Richest Customer Wealth
+    // 1512. Number of Good Pairs [EASY]
+    public int numIdenticalPairs(int[] nums) {
+        int good = 0; 
+        
+        for (int i = 0; i < nums.length; i++) { 
+            for (int j = 0; j < nums.length; j++) { 
+                if (nums[i] == nums[j] && i < j) { 
+                    good++;
+                }
+            }
+        }
+        
+        return good; 
+    }
+
+    // 1672. Richest Customer Wealth [EASY]
     public int maximumWealth(int[][] accounts) {
         int richest = 0;
         
@@ -95,8 +110,8 @@ class Solution {
         return richest; 
     }
 
-    // 1920. Build Array from Permutation
-    public int[] buildArray(int[] nums) {
+    // 1920. Build Array from Permutation [EASY]
+    public int[] buildArray(int[] nums) { 
         int[] ans = new int[nums.length];
         for (int i = 0; i < nums.length; i++){
             ans[i] = nums[nums[i]];
@@ -105,7 +120,7 @@ class Solution {
         return ans; 
     }
 
-    // 1929. Concatenation of Array
+    // 1929. Concatenation of Array [EASY]
     public int[] getConcatenation(int[] nums) {
         int[] concat = new int[nums.length * 2];
         for (int i = 0; i < nums.length; i++){
@@ -116,7 +131,7 @@ class Solution {
         return concat;
     }
 
-    // 2011. Final Value of Variable After Performing Operations
+    // 2011. Final Value of Variable After Performing Operations [EASY]
     public int finalValueAfterOperations(String[] operations) {
         int x = 0; 
         
@@ -131,7 +146,7 @@ class Solution {
         return x; 
     }
 
-	// 2114. Maximum Number of Words Found in Sentences
+    // 2114. Maximum Number of Words Found in Sentences [EASY]
     public int mostWordsFound(String[] sentences) {
         int words = 0; 
         
