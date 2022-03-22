@@ -2,7 +2,7 @@
     My C# solutions to the LeetCode C# exercises. 
     Feel free to poke around.
 
-    Exercises finished: 1
+    Exercises finished: 2
 */
 
 public class Solution {
@@ -21,5 +21,15 @@ public class Solution {
             }
         }
         return nums;
+    }
+    
+    // 1960. Build Array from Permutation [EASY]
+    public int[] BuildArray(int[] nums) {
+        int[] ans = new int[nums.Length];
+        for (int i = 0; i < nums.Length; i++){
+            ans[i] = nums[nums[i]];
+        }
+        
+        return ans; 
     }
 }
