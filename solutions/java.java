@@ -63,6 +63,18 @@ class Solution {
         
         return smallers; 
     }
+	
+	// 1470. Shuffle the Array
+	public int[] shuffle(int[] nums, int n) {
+        int[] shuffled = new int[n * 2];
+        
+        for (int i = 0; i < n; i++) { 
+            shuffled[2*i] = nums[i];
+            shuffled[2*i + 1] = nums[i + n];
+        }
+        
+        return shuffled; 
+    }
 
     // 1480. Running Sum of 1d Array [EASY]
     public int[] runningSum(int[] nums) {
