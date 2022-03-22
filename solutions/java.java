@@ -19,6 +19,11 @@ class Solution {
         }
         return nums;
     }
+	
+	// 58. Length of Last Word [EASY] 
+	public int lengthOfLastWord(String s) {
+        return s.split(" ")[s.split(" ").length - 1].length();
+    }
 
     // 771. Jewels and Stones [EASY]
     public int numJewelsInStones(String jewels, String stones) {
