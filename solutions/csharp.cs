@@ -1,3 +1,10 @@
+/*
+    My C# solutions to the LeetCode C# exercises. 
+    Feel free to poke around.
+
+    Exercises finished: 1
+*/
+
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
         for (int i = 0; i < nums.Length; i++) { 
