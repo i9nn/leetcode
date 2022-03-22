@@ -1,8 +1,8 @@
 #
-#   My Java solutions to the LeetCode Java exercises. 
+#   My Python solutions to the LeetCode Python exercises. 
 #   Feel free to poke around.
 #
-#   Exercises finished: 1
+#   Exercises finished: 4
 #
 
 class Solution:
