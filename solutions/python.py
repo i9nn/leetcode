@@ -37,6 +37,10 @@ class Solution:
 
         return ""
     
+    # 58. Length of Last Word [EASY]
+    def length_of_last_word(self, s: str) -> int:
+        return len(s.split()[len(s.split()) - 1])
+    
     # 69. Sqrt(x) [EASY] 
     def my_sqrt(self, x: int) -> int:
         for i in range(x + 1):
