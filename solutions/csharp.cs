@@ -6,6 +6,8 @@
 */
 
 public class Solution {
+    
+    // 1. Two Sum [EASY]
     public int[] TwoSum(int[] nums, int target) {
         for (int i = 0; i < nums.Length; i++) { 
             for (int j = 0; j < nums.Length; j++) { 
