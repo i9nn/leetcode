@@ -54,6 +54,15 @@ class Solution:
     # 169. Majority Element [EASY] 
     def majority_element(self, nums: List[int]) -> int:
         return sorted(nums)[len(sorted(nums)) // 2]
+    
+    # 171. Excel Sheet Column Number
+    def title_to_number(self, column_title: str) -> int:
+        alphabet, colnum = "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 0 
+        
+        for i in range(len(column_title)):
+            colnum += 26 ** (len(column_title) - (i + 1)) * (alphabet.index(column_title[i]) + 1) 
+            
+        return colnum
 
     # 1920. Build Array from Permutation [EASY] 
     def build_array(self, nums: List[int]) -> List[int]:
