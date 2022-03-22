@@ -2,7 +2,7 @@
 #   My Python solutions to the LeetCode Python exercises. 
 #   Feel free to poke around.
 #
-#   Exercises finished: 4
+#   Exercises finished: 5
 #
 
 class Solution:
@@ -36,6 +36,16 @@ class Solution:
                 
 
         return ""
+    
+    # 69. Sqrt(x) [EASY] 
+    def my_sqrt(self, x: int) -> int:
+        for i in range(x + 1):
+            if i * i == x:
+                return i 
+            elif i * i > x:
+                return i - 1
+            
+        return 0 
 
     # 1920. Build Array from Permutation [EASY] 
     def build_array(self, nums: List[int]) -> List[int]:
