@@ -50,6 +50,10 @@ class Solution:
                 return i - 1
             
         return 0 
+    
+    # 169. Majority Element [EASY] 
+    def majority_element(self, nums: List[int]) -> int:
+        return sorted(nums)[len(sorted(nums)) // 2]
 
     # 1920. Build Array from Permutation [EASY] 
     def build_array(self, nums: List[int]) -> List[int]:
