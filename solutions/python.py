@@ -63,6 +63,23 @@ class Solution:
             colnum += 26 ** (len(column_title) - (i + 1)) * (alphabet.index(column_title[i]) + 1) 
             
         return colnum
+    
+    # 412. Fizz Buzz [EASY]
+    def fizz_buzz(self, n: int) -> List[str]:
+        p = []
+        
+        for i in range(1, n + 1):
+            s = ""
+            
+            s += "Fizz" if i % 3 == 0 else ""
+            s += "Buzz" if i % 5 == 0 else ""
+            
+            if s == "":
+                s = str(i)
+                
+            p.append(s)
+            
+        return p
 
     # 1920. Build Array from Permutation [EASY] 
     def build_array(self, nums: List[int]) -> List[int]:
