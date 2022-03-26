@@ -2,12 +2,12 @@
 #   My Python solutions to the LeetCode Python exercises. 
 #   Feel free to poke around.
 #
-#   Exercises finished: 5
+#   Exercises finished: 9
 #
 
 class Solution:
     # 1. Two Sum [EASY]
-    def two_sum(self, nums: List[int], target: int) -> List[int]:
+    def two_sum(self, nums: list[int], target: int) -> list[int]:
         solutions = ["a", "b"]
         for i in range(len(nums)):
                 solutions = [i, nums.index(target - nums[i])] if target - nums[i] in nums and nums.index(target - nums[i]) != i else solutions
@@ -21,7 +21,7 @@ class Solution:
         return str(x)[::-1] == str(x)
     
     # 14. Longest Common Prefix [EASY]
-    def longestCommonPrefix(self, strs: List[str]) -> str: 
+    def longestCommonPrefix(self, strs: list[str]) -> str: 
         if len(strs) == 1:
             return strs[0]
         
@@ -52,7 +52,7 @@ class Solution:
         return 0 
     
     # 169. Majority Element [EASY] 
-    def majority_element(self, nums: List[int]) -> int:
+    def majority_element(self, nums: list[int]) -> int:
         return sorted(nums)[len(sorted(nums)) // 2]
     
     # 171. Excel Sheet Column Number
@@ -65,7 +65,7 @@ class Solution:
         return colnum
     
     # 412. Fizz Buzz [EASY]
-    def fizz_buzz(self, n: int) -> List[str]:
+    def fizz_buzz(self, n: int) -> list[str]:
         p = []
         
         for i in range(1, n + 1):
@@ -82,7 +82,7 @@ class Solution:
         return p
 
     # 1920. Build Array from Permutation [EASY] 
-    def build_array(self, nums: List[int]) -> List[int]:
+    def build_array(self, nums: list[int]) -> list[int]:
         lst = [nums[i] for i in nums]
         return lst
         
