@@ -9,8 +9,8 @@ class Solution {
     
     // 1. Two Sum [EASY]
     public int[] twoSum(int[] nums, int target) {
-        for (var i = 0; i < nums.length; i++) { 
-            for (var j = 0; j < nums.length; j++) { 
+        for (int i = 0; i < nums.length; i++) { 
+            for (int j = 0; j < nums.length; j++) { 
                 if (nums[i] + nums[j] == target && i != j) {
                     int[] sum = {i, j};
                     return sum; 
