@@ -21,7 +21,7 @@ class Solution:
         return str(x)[::-1] == str(x)
     
     # 14. Longest Common Prefix [EASY]
-    def longestCommonPrefix(self, strs: list[str]) -> str: 
+    def longest_common_prefix(self, strs: list[str]) -> str: 
         if len(strs) == 1:
             return strs[0]
         

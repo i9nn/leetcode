@@ -45,9 +45,7 @@ class Solution {
         
         for (int i = 0; i < address.length(); i++) { 
             if (Character.isDigit(address.charAt(i))) {
-                defanged += address.charAt(i);
-            } else { 
-                defanged += "[.]";
+                defanged += (Character.isDigit(address.charAt(i))) ? address.charAt(i) : "[.]";
             }
         } 
         
