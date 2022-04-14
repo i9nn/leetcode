@@ -21,7 +21,7 @@ class Solution {
     }
 	
 	// 58. Length of Last Word [EASY] 
-	public int lengthOfLastWord(String s) {
+    public int lengthOfLastWord(String s) {
         return s.split(" ")[s.split(" ").length - 1].length();
     }
 
@@ -182,5 +182,10 @@ class Solution {
         }
 
         return words; 
+    }
+	
+    // 2235. Add Two Integers [EASY]
+    public int sum(int num1, int num2) {
+        return num1 + num2; 
     }
 }
