@@ -85,4 +85,7 @@ class Solution:
     def build_array(self, nums: list[int]) -> list[int]:
         lst = [nums[i] for i in nums]
         return lst
-        
+    
+    # 2235. Add Two Integers [EASY]
+    def sum(self, num1: int, num2: int) -> int:
+        return num1 + num2
