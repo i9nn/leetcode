@@ -19,6 +19,22 @@ class Solution {
         }
         return nums;
     }
+
+    // 9. Palindrome Number [EASY]
+    public boolean isPalindrome(int x) {
+        String num = Integer.toString(x);
+        String reversed = "";
+        
+        for (int i = num.length(); i > 0; i--) {
+            reversed += num.charAt(i - 1);
+        }
+        
+        try {
+            return (Integer.parseInt(num) == Integer.parseInt(reversed)) ? true : false; 
+        } catch (NumberFormatException e) {
+            return false; 
+        }
+    }
 	
 	// 58. Length of Last Word [EASY] 
     public int lengthOfLastWord(String s) {
