@@ -30,15 +30,43 @@ class Solution {
         }
         
         try {
-            return (Integer.parseInt(num) == Integer.parseInt(reversed)) ? true : false; 
+            return (x == Integer.parseInt(reversed)); 
         } catch (NumberFormatException e) {
             return false; 
         }
+    }
+
+    // 28. Implement strStr() [EASY]
+    public int strStr(String haystack, String needle) {
+        if (haystack.indexOf(needle) > -1) {
+            return haystack.indexOf(needle); 
+        }
+        return -1;
     }
 	
 	// 58. Length of Last Word [EASY] 
     public int lengthOfLastWord(String s) {
         return s.split(" ")[s.split(" ").length - 1].length();
+    }
+
+    // 412. Fizz Buzz [EASY]
+    public List<String> fizzBuzz(int n) {
+        List<String> nums = new ArrayList<String>();  
+            
+        for (int i = 1; i <= n; i++) {
+            String temp = ""; 
+
+            temp += ((i % 3 == 0) ? "Fizz" : ""); 
+            temp += ((i % 5 == 0) ? "Buzz" : ""); 
+    
+            if (temp == "") {
+                temp = Integer.toString(i); 
+            }
+            
+            nums.add(temp); 
+        }
+        
+        return nums; 
     }
 
     // 771. Jewels and Stones [EASY]
